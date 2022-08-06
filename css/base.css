@@ -1,0 +1,29 @@
+.in-box{
+	display: inline-flex;
+}
+.box{
+	display: -webkit-flex; /* Safari */
+	display: flex;
+	background:#88499C;
+}
+.item{
+	width:98px;
+	height:98px;
+	border:1px solid #000;
+	background:#E77F24;
+}
+
+
+.item50{
+	width:48px;
+	height:48px;
+}
+.item150{
+	width:148px;
+	height:68px;
+
+}
+.item200{
+	width:198px;
+	height:108px;
+}

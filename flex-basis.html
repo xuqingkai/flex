@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flex-basis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.box{
+		flex-wrap:wrap;
+	}
+
+	.auto{
+		
+	}
+	.flex-basis{
+		width:80px
+	}
+	.space-between{
+		justify-content:space-between
+	}
+	</style>
+</head>
+<body>
+	<h1>flex-basis：重置项目自带宽度为该属性值。浏览器以此计算主轴是否有多余空间。</h1>
+	<div class="box">
+		<div class="item item200">1</div>
+		<div class="item item50">2</div>
+		<div class="item">3</div>
+		<div class="item item150">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item200">7</div>
+		<div class="item">8</div>
+		<div class="item">9</div>
+		<div class="item">10</div>
+	</div>
+	<h1>flex-basis：100px</h1>
+	<div class="box">
+		<div class="item item200 auto">1</div>
+		<div class="item item50 flex-basis">2</div>
+		<div class="item flex-basis">3</div>
+		<div class="item item150 flex-basis">4</div>
+		<div class="item flex-basis">5</div>
+		<div class="item flex-basis">6</div>
+		<div class="item item200 flex-basis">7</div>
+		<div class="item flex-basis">8</div>
+		<div class="item flex-basis">9</div>
+		<div class="item flex-basis">10</div>
+	</div>
+	<h1>flex-basis：100px + justify-content:space-between</h1>
+	<div class="box space-between">
+		<div class="item item200 auto">1</div>
+		<div class="item item50 flex-basis">2</div>
+		<div class="item flex-basis">3</div>
+		<div class="item item150 flex-basis">4</div>
+		<div class="item flex-basis">5</div>
+		<div class="item flex-basis">6</div>
+		<div class="item item200 flex-basis">7</div>
+		<div class="item flex-basis">8</div>
+		<div class="item flex-basis">9</div>
+		<div class="item flex-basis">10</div>
+	</div>
+</body>
+</html>

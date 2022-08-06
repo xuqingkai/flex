@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flex-basis</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.box{
+		flex-wrap:wrap;
+	}
+
+	.flex00{
+		flex:0 0 80px
+	}
+	.flex01{
+		flex:0 1 80px
+	}
+	.flex10{
+		flex:1 0 80px
+	}
+	.flex11{
+		flex:1 1 80px
+	}
+	</style>
+</head>
+<body>
+	<h1>flex:0 0 80px</h1>
+	<div class="box">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item">7</div>
+		<div class="item">8</div>
+		<div class="item">9</div>
+		<div class="item">10</div>
+	</div>
+	<h1>flex:0 1 80px</h1>
+	<div class="box">
+		<div class="item flex00">1</div>
+		<div class="item flex0">2</div>
+		<div class="item flex00">3</div>
+		<div class="item flex00">4</div>
+		<div class="item flex00">5</div>
+		<div class="item flex00">6</div>
+		<div class="item flex00">7</div>
+		<div class="item flex00">8</div>
+		<div class="item flex00">9</div>
+		<div class="item flex00">10</div>
+	</div>
+	<h1>flex:0 1 80px</h1>
+	<div class="box">
+		<div class="item flex01">1</div>
+		<div class="item flex01">2</div>
+		<div class="item flex01">3</div>
+		<div class="item flex01">4</div>
+		<div class="item flex01">5</div>
+		<div class="item flex01">6</div>
+		<div class="item flex01">7</div>
+		<div class="item flex01">8</div>
+		<div class="item flex01">9</div>
+		<div class="item flex01">10</div>
+	</div>
+	<h1>flex:1 0 80px</h1>
+	<div class="box">
+		<div class="item flex10">1</div>
+		<div class="item flex10">2</div>
+		<div class="item flex10">3</div>
+		<div class="item flex10">4</div>
+		<div class="item flex10">5</div>
+		<div class="item flex10">6</div>
+		<div class="item flex10">7</div>
+		<div class="item flex10">8</div>
+		<div class="item flex10">9</div>
+		<div class="item flex10">10</div>
+	</div>
+	<h1>flex:1 1 80px</h1>
+	<div class="box">
+		<div class="item flex11">1</div>
+		<div class="item flex11">2</div>
+		<div class="item flex11">3</div>
+		<div class="item flex11">4</div>
+		<div class="item flex11">5</div>
+		<div class="item flex11">6</div>
+		<div class="item flex11">7</div>
+		<div class="item flex11">8</div>
+		<div class="item flex11">9</div>
+		<div class="item flex11">10</div>
+	</div>
+</body>
+</html>

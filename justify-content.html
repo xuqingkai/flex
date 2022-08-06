@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>justify-content</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.box{
+		flex-wrap:wrap;
+	}
+	.start{
+		justify-content:start;
+	}
+	.end{
+		justify-content:end;
+	}
+	.left{
+		justify-content:left;
+	}
+	.right{
+		justify-content:right;
+	}
+	
+	
+	.flex-start{
+		
+	}
+	.flex-end{
+		justify-content:flex-end;
+	}
+	.center{
+		justify-content:center;
+	}
+	.space-between{
+		justify-content:space-between;
+	}
+	.space-around{
+		justify-content:space-around;
+	}
+	.space-evenly{
+		justify-content:space-evenly;
+	}
+	</style>
+</head>
+<body>
+	<h1>flex-start/start/left：默认，左对齐</h1>
+	<div class="box flex-start">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>flex-end/end/right：右对齐</h1>
+	<div class="box flex-end">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>center：居中</h1>
+	<div class="box center">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>space-between：两端对齐</h1>
+	<div class="box space-between">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item">7</div>
+		<div class="item">8</div>
+		<div class="item">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item">12</div>
+		<div class="item">13</div>
+		<div class="item">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item">17</div>
+	</div>
+	<h1>space-around：个体绝对空隙</h1>
+	<div class="box space-around">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item">7</div>
+		<div class="item">8</div>
+		<div class="item">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item">12</div>
+		<div class="item">13</div>
+		<div class="item">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item">17</div>
+	</div>
+	<h1>space-evenly：整体均匀对齐</h1>
+	<div class="box space-evenly">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+		<div class="item">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item">7</div>
+		<div class="item">8</div>
+		<div class="item">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item">12</div>
+		<div class="item">13</div>
+		<div class="item">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item">17</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>order</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.box{
+		flex-wrap:wrap;
+	}
+	.item{
+		order:10;
+	}
+	.item50{
+		order:5;
+	}
+	.item150{
+		order:15;
+	}
+	.item200{
+		order:20;
+	}
+	</style>
+</head>
+<body>
+	<h1>order：排序，数值越小越靠前，默认为0</h1>
+	<div class="box nowrap">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>直接在项目上设置：style="order:"</h1>
+	<div class="box wrap">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50" style="order:-8">17</div>
+		<div class="item item150" style="order:-6">18</div>
+		<div class="item item200" style="order:-4">19</div>
+		<div class="item">20</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>flex-wrap</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.nowrap{
+		
+	}
+	.wrap{
+		flex-wrap : wrap;
+	}
+	.wrap-reverse{
+		flex-wrap: wrap-reverse;
+	}
+	</style>
+</head>
+<body>
+	<h1>nowrap：默认，不换行，硬挤</h1>
+	<div class="box nowrap">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>wrap：换行，第一行在上面</h1>
+	<div class="box wrap">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>wrap-reverse：换行，第二行在上面</h1>
+	<div class="box wrap-reverse">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+</body>
+</html>

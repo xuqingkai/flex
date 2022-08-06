@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>align-items</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.box{
+		flex-wrap:wrap;
+	}
+	.item0{
+		width:98px;
+		border:1px solid #000;
+		background:#E77F24;
+	}
+	
+	.item50{
+		font-size:20px
+	}
+	.item{
+		font-size:40px
+	}
+	.item150{
+		font-size:60px
+	}
+	.item200{
+		font-size:80px
+	}
+	
+
+	.stretch{
+		
+	}
+	.flex-start{
+		align-items:flex-start;
+	}
+	.flex-end{
+		align-items:flex-end;
+	}
+	.center{
+		align-items:center;
+	}
+	.baseline{
+		align-items:baseline;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>stretch：默认，如果项目未设置高度，则以所有的项目的最大高度的为准</h1>
+	<div class="box stretch">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item200">4</div>
+		<div class="item item150">3</div>
+		<div class="item0">这个方块没设置高度</div>
+
+	</div>
+	<h1>flex-start：本行所有项目的上边沿都在一条线上</h1>
+	<div class="box flex-start">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>flex-end：本行所有项目的下边沿都在一条线上</h1>
+	<div class="box flex-end">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>center：本行所有项目的中间线都在一条线上</h1>
+	<div class="box center">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>baseline：本行所有项目的文字的底线都在一条线上</h1>
+	<div class="box baseline">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+</body>
+</html>

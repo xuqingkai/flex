@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>align-content</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<style type="text/css">
+	.box{
+		flex-wrap:wrap;
+		height:500px;
+	}
+
+	.stretch{
+		
+	}
+	.flex-start{
+		align-content: flex-start;
+	}
+	.flex-end{
+		align-content: flex-end;
+	}
+	.center{
+		align-content: center;
+	}
+	.space-between{
+		align-content: space-between;
+	}
+	.space-around{
+		align-content: space-around;
+	}
+	.space-evenly{
+		align-content: space-evenly;
+	}
+	</style>
+</head>
+<body>
+	<h1>stretch：每行之间或与底边框的间距都相同</h1>
+	<div class="box stretch">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>flex-start：所有行集中起来，靠顶</h1>
+	<div class="box flex-start">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>flex-end：所有行集中起来，靠底</h1>
+	<div class="box flex-end">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>center：所有行集中起来，垂直居中</h1>
+	<div class="box center">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>space-between：所有行分散开来，靠顶也靠底</h1>
+	<div class="box space-between">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>space-around：每行各自的上下间距相同，</h1>
+	<div class="box space-around">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+	<h1>space-evenly：，</h1>
+	<div class="box space-evenly">
+		<div class="item">1</div>
+		<div class="item item50">2</div>
+		<div class="item item150">3</div>
+		<div class="item item200">4</div>
+		<div class="item">5</div>
+		<div class="item">6</div>
+		<div class="item item50">7</div>
+		<div class="item item150">8</div>
+		<div class="item item200">9</div>
+		<div class="item">10</div>
+		<div class="item">11</div>
+		<div class="item item50">12</div>
+		<div class="item item150">13</div>
+		<div class="item item200">14</div>
+		<div class="item">15</div>
+		<div class="item">16</div>
+		<div class="item item50">17</div>
+		<div class="item item150">18</div>
+		<div class="item item200">19</div>
+		<div class="item">20</div>
+	</div>
+</body>
+</html>
