@@ -80,3 +80,12 @@
 - center：本行所有项目的中间线都在一条线上
 - baseline：本行所有项目的文字的底线都在一条线上
 
+## 其他
+
+### 关于justify-content的四个新属性，目前浏览器支持较少，我也不知道什么效果和区别
+- start: 物品被包装在方向的开始处writing-mode。
+- end: 物品被包装到方向的尽头writing-mode。
+- left: 物品被包装在容器的左边缘，除非这对 . 没有意义，否则flex-direction它的行为就像start.
+- right: 物品被包装在容器的右边缘，除非这对 . 没有意义，否则flex-direction它的行为就像end. 
+
+
