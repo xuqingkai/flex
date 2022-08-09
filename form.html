@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+	.form{
+
+		background:#f5f5f5;
+		line-height:30px;
+		margin-bottom:50px;
+	}
+	.app{
+		border-top:1px solid #eee;
+		background:#fff;
+		line-height:40px;
+		border-bottom:6px solid #eee;
+		font-size:14px;
+	}
+	
+	
+	.flex-form-item{ 
+		display:flex;
+		justify-content:space-between;
+		white-space: nowrap;
+
+	}
+	.flex-form-item-label{
+		width:100px;
+		text-align:right;
+		
+	}
+	.flex-form-item-left{
+		padding-left:10px;
+		flex-grow:1;
+		display:flex;align-items:center;
+	}
+	.flex-form-item-mid{
+		background:#fff;
+		flex-grow:1;
+	}
+	.flex-form-item-right{
+		padding:0 10px;
+		display:flex;align-items:center;
+	}
+	.flex-form-item-center{
+		text-align:center;
+		width:100%;
+		
+	}
+	.flex-form-item-text{
+		padding:0 10px;		
+	}
+	
+	
+	.flex-form-item{
+		border-bottom:1px solid #eee;
+	}
+	.flex-form-item-mid input[type=text]{
+		height:30px;margin:0;padding:0;line-height:30px;
+	}
+	.flex-form-item-mid .input-text{
+		width:100%;
+	}
+	.flex-form-item-left img{
+		width:20px;
+	}
+
+	.flex-form-item-right img{
+		width:24px;
+	}
+	</style>
+</head>
+<body>
+	<h1>1.最后一行实现做对齐效果原理：添加若干个空项目</h1>
+
+	<div class="form">
+		<div class="flex-form-item">
+			<div class="flex-form-item-label">姓名：</div>
+			<div class="flex-form-item-mid"><input type="text" />3到4个字</div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-label">年龄：</div>
+			<div class="flex-form-item-mid"><input type="text" /></div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-label">性别：</div>
+			<div class="flex-form-item-mid">男<input type="radio" name="sex" value="1" />，女<input type="radio" name="sex" value="1" /></div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-label">地址：</div>
+			<div class="flex-form-item-mid"><input type="text" class="input-text" /></div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-label">姓名：</div>
+			<div class="flex-form-item-mid"><input type="text" class="input" /></div>
+			<div class="flex-form-item-right">3到4个字</div>
+		</div>
+	</div>
+	
+	
+	<div class="app">
+		<div class="flex-form-item">
+			<div class="flex-form-item-left">个人资料</div>
+			<div class="flex-form-item-right">＞</div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-left">账号安全</div>
+			<div class="flex-form-item-right">＞</div>
+		</div>
+	</div>
+	<div class="app">
+		<div class="flex-form-item">
+			<label class="flex-form-item-left"><img src="./images/flex-form-item-icon.png" />&nbsp;未读消息</label>
+			<div class="flex-form-item-right">＞</div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-left">我的积分</div>
+			<div class="flex-form-item-right">＞</div>
+		</div>
+	</div>
+	<div class="app">
+		<div class="flex-form-item">
+			<div class="flex-form-item-left">问题与反馈</div>
+			<div class="flex-form-item-right">＞</div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-left">设置</div>
+			<div class="flex-form-item-right"><img src="./images/flex-form-item-right.png" /></div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-left">关于</div>
+			<div class="flex-form-item-right">＞</div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-center">切换账号</div>
+		</div>
+		<div class="flex-form-item">
+			<div class="flex-form-item-center">退出</div>
+		</div>
+	</div>
+</body>
+</html>
