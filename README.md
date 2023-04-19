@@ -1,4 +1,8 @@
-# 产品图片排列效果，请查看Product.html文件----xuqingkai
+# my.flex
+
+## 预览
+http://xuqingkai.github.io/my.flex/index.html
+
 
 ## 容器
 
