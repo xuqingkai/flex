@@ -1,4 +1,4 @@
-# myflex
+# 产品图片排列效果，请查看Product.html文件----xuqingkai
 
 ## 容器
 
