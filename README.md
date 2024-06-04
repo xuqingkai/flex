@@ -1,20 +1,20 @@
 # my.flex
 
 ## 预览
-- http://xuqingkai.github.io/my.flex/product.html
-- http://xuqingkai.github.io/my.flex/form.html
-- http://xuqingkai.github.io/my.flex/box.align-content.html
-- http://xuqingkai.github.io/my.flex/box.align-items.html
-- http://xuqingkai.github.io/my.flex/box.flex-direction.html
-- http://xuqingkai.github.io/my.flex/box.flex-flow.html
-- http://xuqingkai.github.io/my.flex/box.flex-wrap.html
-- http://xuqingkai.github.io/my.flex/box.justify-content.html
-- http://xuqingkai.github.io/my.flex/item.align-self.html
-- http://xuqingkai.github.io/my.flex/item.flex.html
-- http://xuqingkai.github.io/my.flex/item.flex-basis.html
-- http://xuqingkai.github.io/my.flex/item.flex-grow.html
-- http://xuqingkai.github.io/my.flex/item.flex-shrink.html
-- http://xuqingkai.github.io/my.flex/item.order.html
+- http://xuqingkai.github.io/flex/product.html
+- http://xuqingkai.github.io/flex/form.html
+- http://xuqingkai.github.io/flex/box.align-content.html
+- http://xuqingkai.github.io/flex/box.align-items.html
+- http://xuqingkai.github.io/flex/box.flex-direction.html
+- http://xuqingkai.github.io/flex/box.flex-flow.html
+- http://xuqingkai.github.io/flex/box.flex-wrap.html
+- http://xuqingkai.github.io/flex/box.justify-content.html
+- http://xuqingkai.github.io/flex/item.align-self.html
+- http://xuqingkai.github.io/flex/item.flex.html
+- http://xuqingkai.github.io/flex/item.flex-basis.html
+- http://xuqingkai.github.io/flex/item.flex-grow.html
+- http://xuqingkai.github.io/flex/item.flex-shrink.html
+- http://xuqingkai.github.io/flex/item.order.html
 
 
 ## 容器
