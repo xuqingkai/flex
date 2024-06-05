@@ -44,7 +44,7 @@
 ### flex-flow：以上两项缩写（flex-direction + flex-wrap）
 - flex-flow: row nowrap
 
-### justify-content：每一行内，项目的水平方向相对于容器的对齐方式
+### justify-content：每一行内，项目的水平方向相对于box容器的对齐方式，与下面的align-content相对应
 - https://www.runoob.com/cssref/css3-pr-justify-content.html
 - flex-start/start/left：默认，左对齐
 - flex-end/end/right：右对齐
@@ -60,7 +60,7 @@
 - center：本行所有项目的中间线都在一条线上
 - baseline：本行所有项目的文字的底线都在一条线上
 
-### align-content：多行时，所有的行的对齐方式，必须设置了box高度才能看到效果
+### align-content：每一行内，相对的垂直方向相对于box容器的对齐方式（必须设置了box高度才能看到效果）
 - stretch：每行之间或与底边框的间距都相同
 - flex-start：所有行集中起来，靠顶
 - flex-end：所有行集中起来，靠底
