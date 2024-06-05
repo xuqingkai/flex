@@ -44,7 +44,7 @@
 ### flex-flow：以上两项缩写（flex-direction + flex-wrap）
 - flex-flow: row nowrap
 
-### justify-content：每一行内，项目的水平方向的对齐方式
+### justify-content：每一行内，项目的水平方向相对于容器的对齐方式
 - https://www.runoob.com/cssref/css3-pr-justify-content.html
 - flex-start/start/left：默认，左对齐
 - flex-end/end/right：右对齐
@@ -53,7 +53,7 @@
 - space-around：每个项目的两边的间距相同
 - space-evenly：每个项目的之间的间距相同
 
-### align-items：每一行内，项目的垂直方向的对齐方式
+### align-items：每一行内，项目的水平方向上相互之间的对齐方式
 - stretch：默认，如果项目未设置高度，则以项目的最大高度的为准
 - flex-start：本行所有项目的上边沿都在一条线上
 - flex-end：本行所有项目的下边沿都在一条线上
