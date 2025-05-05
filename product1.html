@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>product</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+	.product-list{ 
+		border:1px solid #000;
+		background:#eee;
+
+	}
+	.flex-images-text{ 
+		display:grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));/*最关键的一行*/
+		margin-right: -10px;
+        margin-bottom: -10px;
+	}
+	.flex-image-text{
+		background:#fff;
+		margin-right: 10px;
+        margin-bottom: 10px;
+
+	}
+	.flex-image-text-extra{
+		background:none;
+	}
+
+	.flex-image-text .img img{
+		width:100%;
+		transition: all .5s ease .1s;
+	}
+	.flex-image-text .img{
+		overflow: hidden;
+	}
+	.flex-image-text .img img:hover{
+		transform: scale(1.2);
+	}
+	.flex-image-text .price{
+		padding: 0 5;
+		font-weight:bold;
+		color:#f00;
+		
+	}
+	.flex-image-text .name{
+		padding: 0 5px;
+		line-height:30px;height:30px;
+		overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+		
+	}
+	</style>
+</head>
+<body>
+	<h1>1.最后一行实现做对齐效果原理：添加若干个空项目</h1>
+	<h1>2.项目高度为0，通过内容确定等值高度</h1>
+	<h1>3.所有项目flex-grow:1;不要设置max-width</h1>
+	<h1>4.涉及宽度的width，margin，padding，border必须相等</h1>
+	<h1>5.两侧靠边，项目上下与左右的最小间距通过margin右下的负值来实现</h1>
+	<div class="product-list">
+		<div class="flex-images-text">
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+			<div class="flex-image-text">
+				<div class="img"><a href="javascript:void(0);"><img src="./images/item.jpg" /></a></div>
+				<div class="price">￥13800.00</a></div>
+				<div class="name">LINE FRIENDS可愛帶把手泡面碗帶蓋可微波爐餐具宿舍陶瓷飯碗大號</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
